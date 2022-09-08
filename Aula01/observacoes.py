@@ -1,1 +1,0 @@
-# {} = máscara de substituição. 

@@ -1,0 +1,4 @@
+{} = máscara de substituição. 
+
+C.R.U.D.: Create / Read / Update / Delete 
+
