@@ -15,7 +15,6 @@ potencia = 5 ** 2
 divint = 5 // 2
 porcentagem = 5 % 2
 
-print("======== Calculadora ========")
 print("="*5, "Calculadora", "="*5) #polimorfismo: quando a função tem o sentido alterado (uma entrada altera um valor de saída)
 
 print("Soma: ", soma)

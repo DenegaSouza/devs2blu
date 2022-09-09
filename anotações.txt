@@ -1,4 +1,5 @@
 {} = máscara de substituição. 
+= é um operador relacional
 
 C.R.U.D.: Create / Read / Update / Delete 
 
