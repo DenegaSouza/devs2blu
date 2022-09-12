@@ -1,6 +1,0 @@
-{}... .format() = máscara de substituição. 
-{var} = interpolacao
-= é um operador relacional
-
-C.R.U.D.: Create / Read / Update / Delete 
-
