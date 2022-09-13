@@ -10,4 +10,4 @@ idade = int(input("Digite sua idade: "))
 salario = float(input("Digite seu salário desejado: "))
 
 
-print(f"Nome: {nome}\nSobrenome: {sobreNome}\nIdade: {idade}\nSalário pretendido: {salario}")
+print("Nome: {}\nSobrenome: {}\nIdade: {}\nSalário pretendido: {}".format(nome, sobreNome, idade, salario))

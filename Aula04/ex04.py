@@ -20,3 +20,19 @@ somaSal = salMaio + salJunho + salJulho + salAgosto
 
 print("="*5, "CALCULADORA", "="*5)
 print("Salário de Maio: {:.2f}\nSalário de Junho: {:.2f}\nSalário de Julho: {:.2f}\nSalário de Agosto: {:.2f}\nTotal de salários dos últimos 4 meses é de {:.2f}".format(salMaio, salJunho, salJulho, salAgosto, somaSal))
+
+
+
+"""
+Observações:
+salX = variável
+=  operador relacional (recebe)
+float: classe
+input: função que pede informações no console
+somaSal: variavel que soma outras variáveis
+print: impressao em tela
+*5: polimorfismo
+\n: caracteres especiais quebra linha
+:.2f definicao de 2 casas decimais
+
+"""
