@@ -1,0 +1,17 @@
+
+COMANDOS DE TERMINAL PARA GITHUB
+
+# Adicionar todos os arquivos da pasta
+-> git add .
+
+# Mostrar status dos arquivos
+-> git status
+
+# Incluir arquivos no commit
+-> git commit -m "teste de commit"
+
+# Enviar para o github
+-> git push
+
+# Puxar arquivos atualizados do github
+-> git pull
