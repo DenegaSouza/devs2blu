@@ -30,3 +30,19 @@ def divisao(n1, n2):
 
 def somaSal(sal1, sal2, sal3, sal4):
     return sal1+sal2+sal3+sal4
+
+def salvar(nome):
+    with open("nomes.txt","a") as arquivo:
+        arquivo.write(f"{nome}\n")
+
+def listar():
+    nomes = []
+    with open("nomes.txt","r") as arquivo:
+        for name in arquivo:
+            name = name.strip()
+            nomes.append(name)
+
+    return nomes
+
+#salvar("~ coloque um nome ~ ") se tirar o comentÃ¡rio e rodar, ele inclui e depois lista, deve tirar e colocar o # de baixo e ir intercalando.
+#print("Lista de Nomes", listar())
