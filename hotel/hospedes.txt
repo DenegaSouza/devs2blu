@@ -1,1 +1,2 @@
-{'ever', 435, 'sds'}
+{'cpf': '123', 'nome': 'ever', 'sobrenome': 'den', 'idade': 34}
+{'cpf': '123456', 'nome': 'everton', 'sobrenome': 'denega', 'idade': 25}

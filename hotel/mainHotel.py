@@ -14,6 +14,7 @@ if __name__ == "__main__":
                            
         elif opcao == 2:
             print("2. Relatório de Hóspedes")
+            listar()
 
         elif opcao == 3:
             os.system('cls')
