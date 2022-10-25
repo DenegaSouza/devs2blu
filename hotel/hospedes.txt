@@ -1,2 +1,1 @@
-{'cpf': '123', 'nome': 'ever', 'sobrenome': 'den', 'idade': 34}
-{'cpf': '123456', 'nome': 'everton', 'sobrenome': 'denega', 'idade': 25}
+{'cpf': '111', 'nome': 'ever', 'sobrenome': 'den'}
