@@ -1,0 +1,2 @@
+{'nome': 'everton', 'ano_nasc': '1985', 'cart_trab': 123456, 'ano_inicio': 2022, 'salario': 5000}
+{'nome': 'evert', 'ano_nasc': '1910', 'cart_trab': 0}

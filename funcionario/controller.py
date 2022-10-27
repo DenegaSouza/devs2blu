@@ -2,27 +2,35 @@ import os
 
 def cadastrarFunc():
     print("CADASTRO DE FUNCIONÁRIO")
-    cadastro = {}
-    cadastro['nome'] = str(input("Digite o nome do funcionário: ")) 
-    cadastro['ano_nasc'] = str(input("Digite o ano de nascimento: "))
-    cadastro['cart_trab'] = int(input("Digite o número da carteira de Trabalho: "))
-    if cadastro['cart_trab'] != 0:
-        cadastro['ano_inicio'] = int(input("Digite o ano de contratação: ")) 
-        cadastro['salario'] = int(input("Digite o salário: "))
-        print(f"Cadastrado com sucesso. Segue dados: \n{cadastro}")
-        
+    cadastroFunc = {}
+    cadastroFunc['nome'] = str(input("Digite o nome do funcionário: ")) 
+    cadastroFunc['ano_nasc'] = str(input("Digite o ano de nascimento: "))
+    cadastroFunc['cart_trab'] = int(input("Digite o número da carteira de Trabalho: "))
+    if cadastroFunc['cart_trab'] != 0:
+        cadastroFunc['ano_inicio'] = int(input("Digite o ano de contratação: ")) 
+        cadastroFunc['salario'] = int(input("Digite o salário: "))
+            
     else:
-        print(f"Cadastrado com sucesso. Segue dados: \n{cadastro}") 
+        print(f"Cadastrado com sucesso. Segue dados: \n{cadastroFunc}") 
+    return salvar(cadastroFunc)
+
+def salvar(cadastroFunc):
+    with open("cadastroFunc.txt","a") as arquivo:
+        arquivo.writelines((str(cadastroFunc)) + "\n")
+        arquivo.close()
+
+def cadastrarPessoa():          
         
-        
-def cadastrarPessoa():
     print("CADASTRO DE PESSOAS")
+    listaPessoa = []
     cadastroPessoa = {}
     cadastroPessoa['nome'] = str(input("Digite o nome da pessoa: ")) 
     cadastroPessoa['sexo'] = str(input("Digite o sexo: "))
     cadastroPessoa['idade'] = int(input("Digite a idade: "))
-    
-    #transformar dict em lista
-    dictPessoa = dict.items(cadastroPessoa)
     print(cadastroPessoa)
-    print((len(dictPessoa)))
+
+
+def listarFunc():
+    with open('cadastroFunc.txt','r') as arquivo:
+        print(arquivo.read())
+        arquivo.close()

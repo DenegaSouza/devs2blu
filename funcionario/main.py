@@ -7,17 +7,8 @@ o dicionário receberá através de uma condicional também os dados do primeiro
 ao final do programa imprima os dados solicitados, esta construção deve ser feita através de funções
 """
 
-'''
-Crie um programa que leia nome, sexo e idade de várias pessoas, 
-guardando os dados de cada pessoa em um dicionário e todos os dicionários em uma lista. 
-No final, mostre: 
-A) Quantas pessoas foram cadastradas; 
-B) A média de idade do grupo; 
-C) Uma lista com todas as mulheres; 
-D) Uma lista com todas as pessoas com idade acima da média.
-'''
-
-from controller import *
+from controller import cadastrarFunc, listarFunc
+from controller import os
 
 if __name__ == "__main__":    
     
@@ -25,26 +16,22 @@ if __name__ == "__main__":
         
         while True:
             poli = '='*10
-            print(f"\n{poli} EXERCICIOS {poli}\n1. Exercício 1\n2. Exercício 2\n")
-        
+            print(f"\n{poli} EXERCICIOS {poli}\n1. Cadastrar\n2. Listar funcionários cadastrados\n3. Sair")
             opcao = int(input("Por favor, digite o nr. da opção desejada: "))
             
             match opcao:
                 case 1:
                     os.system('cls') 
                     cadastrarFunc()
-                            
                 case 2:
-                    os.system('cls') 
-                    cadastrarPessoa()
-
-
-                case 5:
                     os.system('cls')
-                    print("\nAtendimento encerrado.\n")
- 
+                    listarFunc()
+                    
+                case 3:
+                    os.system('cls') 
+                    print("\nAtendimento encerrado.\n") 
                 
                 case _:
                     os.system('cls')
-                    print("Exercício Inválido. Escolha entre 1 e xxxxxxx!\n")
+                    print("Exercício Inválido. Escolha entre 1 e 3!\n")
     menu()
