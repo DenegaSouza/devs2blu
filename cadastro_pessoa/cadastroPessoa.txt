@@ -1,4 +1,0 @@
-{'nome': 'everton', 'sexo': 'm', 'idade': 34}
-{'nome': 'ton', 'sexo': 'm', 'idade': 56}
-{'nome': 'marta', 'sexo': 'f', 'idade': 21}
-{'nome': 'joana', 'sexo': 'f', 'idade': 67}

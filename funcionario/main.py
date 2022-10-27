@@ -7,7 +7,7 @@ o dicionário receberá através de uma condicional também os dados do primeiro
 ao final do programa imprima os dados solicitados, esta construção deve ser feita através de funções
 """
 
-from controller import cadastrarFunc, listarFunc
+from controller import cadastrarFunc
 from controller import os
 
 if __name__ == "__main__":    
@@ -16,18 +16,15 @@ if __name__ == "__main__":
         
         while True:
             poli = '='*10
-            print(f"\n{poli} EXERCICIOS {poli}\n1. Cadastrar\n2. Listar funcionários cadastrados\n3. Sair")
+            print(f"\n{poli} EXERCICIO 1 {poli}\n1. Cadastrar\n2. Sair")
             opcao = int(input("Por favor, digite o nr. da opção desejada: "))
             
             match opcao:
                 case 1:
                     os.system('cls') 
                     cadastrarFunc()
-                case 2:
-                    os.system('cls')
-                    listarFunc()
                     
-                case 3:
+                case 2:
                     os.system('cls') 
                     print("\nAtendimento encerrado.\n") 
                 
