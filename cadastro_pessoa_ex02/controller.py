@@ -8,7 +8,7 @@ def cadastrarPessoa():
     cadastroPessoa['idade'] = int(input("Digite a idade: "))
     return salvar(cadastroPessoa)
 
-    
+
 def salvar(cadastroPessoa):
     with open("cadastroPessoa.txt","a") as arquivo:
         arquivo.writelines((str(cadastroPessoa)) + "\n")
@@ -32,4 +32,3 @@ def mediaIdade():
                 a += int(i)
                 
     print("Soma: ", a)
-            
