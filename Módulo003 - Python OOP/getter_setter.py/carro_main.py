@@ -1,15 +1,22 @@
 from carro import Carro
 
-carro = Carro('Marca', 'Modelo', 'Cor', 'Categoria')
+def menu():
+    carro = Carro(
+        input("Digite a marca: "),
+        input("Digite o modelo: "),
+        input("Digite a cor: "),
+        input("Digite a cotegoria: ")
+        )
+    print(f"Marca: {carro.marca}\nModelo: {carro.modelo}\nCor: {carro.cor}\nCategoria: {carro.categoria}")
+    print(carro)
 
-print(f"Marca: {carro.get_marca()}\nModelo: {carro.get_modelo()}\nCor: {carro.get_cor()}\nCategoria: {carro.get_categoria()}")
-print(carro)
-
-carro2 = Carro(
-    input("Digite a marca do carro: "), 
-    input("Digite o modelo: "),
-    input("Digite a cor: "),
-    input("Digite a categoria: ")    
-)
-print(f"Marca: {carro2.get_marca()}\nModelo: {carro2.get_modelo()}\nCategoria: {carro2.get_categoria()}")
-print(carro2)
+    carro2 = Carro(
+        input("Digite a marca: "),
+        input("Digite o modelo: "),
+        input("Digite a cor: "),
+        input("Digite a cotegoria: ")
+        )
+    print(f"Marca: {carro2.marca} \nModelo: {carro2.modelo} \nCategoria: {carro2.categoria}")
+    print(carro2)
+    
+menu()

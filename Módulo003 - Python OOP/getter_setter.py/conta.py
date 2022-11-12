@@ -3,27 +3,38 @@ class Conta:
         self.__titular = titular
         self.__numero = numero
         self.__saldo = saldo
-        self.__limite = limite
+        self.__limite = limite        
+    
         
-    def set_titular(self, titular):
+    @property # anotação property
+    def titular(self):
+        return self.__titular   
+    @titular.setter
+    def titular(self, titular):
         self.__titular = titular
-    def get_titular(self):
-        return self.__titular
+
     
-    def set_numero(self, numero):
-        self.__numero = numero
-    def get_numero(self):
+    @property
+    def numero(self):
         return self.__numero
+    @numero.setter
+    def numero(self, numero):
+        self.__numero = numero
     
-    def set_saldo(self, saldo):
-        self.__saldo = saldo
-    def get_saldo(self):
+    @property
+    def saldo(self):
         return self.__saldo
-    
-    def set_limite(self, limite):
+    @saldo.setter
+    def saldo(self, saldo):
+        self.__saldo = saldo
+        
+    @property
+    def limite(self):
+        return self.__limite        
+    @limite.setter    
+    def limite(self, limite):
         self.__limite = limite
-    def get_limite(self):
-        return self.__limite
     
     def __str__(self):
-        return f'Titular: {self.get_titular()}\nNúmero da conta: {self.get_numero()}\nSaldo: R${self.get_saldo()}\nLimite: R${self.get_limite()}'
+        return f'Titular: {self.titular}\nNúmero da conta: {self.numero}\nSaldo: R${self.saldo}\nLimite: R${self.limite}'
+    

@@ -1,14 +1,22 @@
 from pessoa import Pessoa
 
-pessoa = Pessoa("Everton", "061466", 30, 183)
+def menu():
+    pessoa = Pessoa(
+        input("Digite o nome: "),
+        input("Digite o cpf: "),
+        input("Digite a idade: "),
+        input("Digite a altura: ")
+        )
+    print(f"Nome: {pessoa.nome}\nCPF: {pessoa.cpf}\nIdade: {pessoa.idade}\nAltura: {pessoa.altura}")
+    print(pessoa)
 
-print(f"Nome: {pessoa.get_nome()}\nNr. CPF: {pessoa.get_cpf()}\nIdade: {pessoa.get_idade()}\nAltura: {pessoa.get_altura()}")
+    pessoa2 = Pessoa(
+        input("Digite o nome: "),
+        input("Digite o cpf: "),
+        input("Digite a idade: "),
+        input("Digite a altura: ")
+        )
+    print(f"Nome: {pessoa2.nome}\nCPF: {pessoa2.cpf}\nIdade: {pessoa2.idade}")
+    print(pessoa2)
 
-pessoa2 = Pessoa(
-    input("Digite o nome da pessoa: "), 
-    input("Digite o CPF: "),
-    input("Digite a idade: "),
-    input("Digite a altura em cm: ")    
-)
-print(f"Nome: {pessoa2.get_nome()}\nNr. CPF: {pessoa2.get_cpf()}\nIdade: {pessoa2.get_idade()}")
-print(pessoa2)
+menu()

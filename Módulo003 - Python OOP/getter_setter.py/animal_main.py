@@ -1,17 +1,22 @@
 from animal import Animal
 
-animal = Animal('Especie', 'Raca', 'Porte', 'Cor')
+def menu():
+    animal = Animal(
+        input("Digite a espécie: "),
+        input("Digite a raça: "),
+        input("Digite o porte: "),
+        input("Digite a cor: ")
+        )
+    print(f"Espécie: {animal.especie}\nRaça: {animal.raca}\nPorte: {animal.porte}\nCor: {animal.cor}")
+    print(animal)
 
-print(f"Especie: {animal.get_especie()}\nRaca: {animal.get_raca()}\nPorte: {animal.get_porte()}\nCor: {animal.get_cor()}")
-print("==============")
-print(animal)
-
-animal2 = Animal(
-    input("Digite a espécie: "), 
-    input("Digite a raca: "),
-    input("Digite o porte: "),
-    input("Digite a cor: ")    
-)
-print(f"Especie: {animal2.get_especie()}\nRaca: {animal2.get_raca()}\nCor: {animal2.get_cor()}")
-print("==============")
-print(animal2)
+    animal2 = Animal(
+        input("Digite a espécie: "),
+        input("Digite a raça: "),
+        input("Digite o porte: "),
+        input("Digite a cor: ")
+        )
+    print(f"Espécie: {animal2.especie}\nRaça: {animal2.raca}\nCor: {animal2.cor}")
+    print(animal2)
+    
+menu()
