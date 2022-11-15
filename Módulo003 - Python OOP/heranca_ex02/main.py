@@ -5,9 +5,9 @@ contaFisica = PessoaFisica(
     input("Digite o titular: "),
     input("Digite o cpf: "),
     input("Digite o saldo inicial: "),
-    input("Digite o segundo titular: "),
+    input("Digite o segundo titular: ")
 )    
 print(contaFisica)
-print("----------------------------------------------------------")
+print("----------------------------------------")
 contaJuridica = PessoaJuridica('Everton', 161456, 5000, 'Denega')    
 print(contaJuridica)
