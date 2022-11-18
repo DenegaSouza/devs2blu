@@ -10,13 +10,13 @@ def menu():
     conta = Conta()
     # Através da variável referência do nosso objeto chame cada atributo interno da nossa classe  e atribua valores aos mesmos
     conta.titular = 'everton'
-    conta.numero = '123456'
-    conta.saldo = '5000'
+    conta.numero = 123456
+    conta.saldo = 5000
 
     # Chame a função create e salve os dados inseridos no nosso objeto no arquivo txt
     create(conta)
     # Crie uma variável lista_contas e atribua a função read
-    lista_contas = read(conta)
+    lista_contas = read()
     # Crie um print para imprimir lista_contas 
     print(lista_contas)
     # Crie um for com uma  c, variável  está, percorrendo a nossa variável que recebeu a função read lista_contas. 
