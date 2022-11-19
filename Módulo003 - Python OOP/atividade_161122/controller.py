@@ -37,3 +37,43 @@ def read():
     # Chame a variável contas do arquivo txt e receba a função interna do python para fechar o arquivo txt .close()
     contas.close()
     return lista_contas
+
+# Crie uma função update recebendo um atributo referenciando a nossa classe Conta 
+def update(conta_update:Conta):
+    # Crie uma variável lista_contas recendo uma lista vazia
+    lista_contas = []
+    # Crie uma variável contas abrindo o arquivo txt
+    contas = open('contas.txt', 'r')
+    # Crie um for com variável de conta percorrendo variável contas
+    for conta in contas:
+        # Crie uma variável conta_limpa recebendo conta e a nossa função interna do python .strip()
+        conta_limpa = conta.strip()
+        # Crie uma variavel conta_objeto recebendo conta_limpa e a nossa função interna do python .split(';')
+        conta_objeto = conta_limpa.split(';')
+        # Crie um if defina como variavel conta_update o mesmo  e atributo da função conta_update
+        # acesse .numero, este é o atributo interno da nossa classe, se for igualdade para  índice [1] de conta_objeto
+        if conta_update.numero == int(conta_objeto[1]):
+            lista_contas.append(str(conta_update)+'\n')
+        else:
+            lista_contas.append(conta)
+    contas.close #Chame a função interna do python .close() para fechar o arquivo
+    contas = open('contas.txt', 'w') #Crie uma variável contas escrevendo no arquivo txt
+    contas.writelines(lista_contas) #chame essa variável, chamando a função interna do python que escreve .writelines()
+    contas.close()
+        
+def delete(numero_conta):
+    lista_contas = []
+    contas = open('contas.txt', 'r')
+    for conta in contas:
+        conta_limpa = conta.strip()
+        conta_objeto = conta_limpa.split(';')
+        
+        if numero_conta.numero != int(conta_objeto[1]):
+            lista_contas.append(str(conta_objeto)+'\n')
+        else:
+            lista_contas.append(conta)
+        
+    contas.close
+    contas = open('contas.txt', 'w')
+    contas.writelines(lista_contas)
+    contas.close()

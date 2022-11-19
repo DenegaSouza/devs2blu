@@ -23,7 +23,7 @@ class Conta:
     @property
     def saldo (self):
         return self.__saldo 
-    @saldo .setter
+    @saldo.setter
     def saldo (self, saldo ):
         self.__saldo  = saldo 
 
