@@ -13,8 +13,9 @@ def menu():
     #create(conta)    
     
     update_conta = Conta()
-    update_conta.titular = 'teste'
-    update_conta.saldo = int(500)
+    update_conta.titular = 'haiko'
+    update_conta.saldo = int(50000)
+    update_conta.numero = int(123456)
     
     update(update_conta)
 
