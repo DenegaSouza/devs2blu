@@ -30,4 +30,4 @@ class Conta:
     #Chame o método __str__ e retorne os atributos acessando as anotações de getter e setter de titular número e saldo, 
     # coloque ( ; ) na divisão de cada atributo. 
     def __str__(self):
-        return f'{self.titular}; {self.numero}; {self.saldo}'
+        return f'{self.titular};{self.numero};{self.saldo}'

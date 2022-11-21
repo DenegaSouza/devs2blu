@@ -1,0 +1,45 @@
+#INFORMAÇÕES DO DOCKER
+docker version
+
+#VERSÃO DO DOCKER
+docker --version
+
+#DELETAR
+docker rmi <id> (id da image, rmi = remove image)
+- imagem só pode ser deletada se não foi usada em container
+
+#DELETAR IMG QUE ESTÁ SENDO USADA
+docker rmi <id>
+
+#VER CONTAINERS QUE ESTÃO RODANDO
+docker ps
+
+#VER TODOS OS CONTAINERS
+docker ps -a
+
+#DELETAR CONTAINER ESPECIFICO
+docker rm <id>
+
+#DELETAR TODOS OS CONTAINERS PARADOS
+docker container prune -> y
+
+
+#CRIAR UM CONTAINER
+docker run -it <ubuntu> (aplicacao)
+
+#ENTRAR NO CONTAINER
+docker start -a <id>
+
+#ATUALIZAR PACOTES
+apt-get update
+
+#INSTALAR PACOTES
+apt-get install <app>
+
+#EXECUTAR ARQUIVO VIA TEMRINAL
+python xxx.py
+
+
+Container: 
+-> é uma imagem sendo executada.
+-> é composto por postgres (read only) e dados (write)

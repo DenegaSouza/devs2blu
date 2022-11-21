@@ -68,9 +68,7 @@ def delete(numero_conta):
         conta_limpa = conta.strip()
         conta_objeto = conta_limpa.split(';')
         
-        if numero_conta.numero != int(conta_objeto[1]):
-            lista_contas.append(str(conta_objeto)+'\n')
-        else:
+        if numero_conta != int(conta_objeto[1]):
             lista_contas.append(conta)
         
     contas.close
