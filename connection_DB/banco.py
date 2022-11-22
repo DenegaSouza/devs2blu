@@ -18,6 +18,7 @@ if conn is not None:
         sobrenome VARCHAR(20)
         )
         """)
+    print("TABELA CRIADA")
     conn.commit()
     cursor.close()
     conn.close()
