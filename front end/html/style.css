@@ -1,0 +1,47 @@
+table {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 700px;
+    
+}
+
+td,
+th {
+    border: 2px solid teal;
+    text-align: left;
+    padding: 3px;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+label {
+    width: 80px;
+    display: inline-block;
+}
+
+textarea {
+    vertical-align: middle;
+}
+
+a:hover {
+    background-color: gold
+}
+
+button {
+    margin-bottom: 5px;
+}
+
+.lego {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+.img-cadastro {
+
+    margin-left: 10px; 
+    width: 30%;
+}

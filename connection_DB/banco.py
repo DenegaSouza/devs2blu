@@ -22,3 +22,11 @@ if conn is not None:
     conn.commit()
     cursor.close()
     conn.close()
+
+def incluir_dados(nome, sobrenome):
+    
+    cursor.execute(f"INSERT INTO tb_pessoa (nome, sobrenome) VALUES ({nome}, {sobrenome});")
+    print("Dados inseridos na tabela")
+    conn.commit()
+    
+incluir_dados('everton', 'denega')
