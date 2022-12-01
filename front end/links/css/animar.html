@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste</title>
+
+    <style>
+        @keyframes trocaCor {
+            from {
+                background-color: red;
+                border-radius: 50%;
+                border: solid black;
+            }
+
+            to {
+                background-color: yellow;
+                border: solid black
+            }
+        }
+
+        @keyframes trocaCorPorcentagem {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: orangered;
+            }
+
+            75% {
+                background-color: slateblue;
+            }
+
+            100% {
+                background-color: tomato;
+                border-radius: 50%
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+        }
+
+        #a {
+            background-color: red;
+            animation-name: trocaCor;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            margin: 150px;
+        }
+        #b {
+            background-color: red;
+            animation-name: trocaCor;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin: 50px;
+        }
+        #c {
+            background-color: red;
+            animation-name: trocaCor;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="a" id="a"></div>
+    <br>
+    <div id="b"></div>
+    <br>
+    <div id="c"></div>
+
+
+</body>
+
+</html>

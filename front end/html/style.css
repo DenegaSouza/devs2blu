@@ -45,3 +45,7 @@ button {
     margin-left: 10px; 
     width: 30%;
 }
+
+.tabelaCadastro tr:hover {
+    background-color: lightgreen;
+        }
