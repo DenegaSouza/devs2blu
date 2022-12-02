@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MENU CADASTRAR</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="logo" />
+            </a>
+        </div>
+        <hr>
+        <ul>
+            <span style="color: white;">Menu de Opções -> </span>
+            <li><a href="index.html">Index</a></li>
+            <li><a href="listar.html">Listar</a></li>
+            <li><a href="editar.html">Editar</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1 style="color: white; text-align: center;">Cadastro de Funcionários</h1>
+        <form action="">
+            <div>
+                <input type="text" class="campos" id="nome" placeholder="Nome:">
+            </div>
+            <br>
+            <div>
+                <input type="text" class="campos" id="cargo" placeholder="Cargo:">
+            </div>
+            <br>
+            <div>
+                <input type="number" class="campos" id="salario" min="0" max="9999999" required data-type="number"
+                    placeholder="Salário:">
+            </div>
+            <br>
+            <div>
+                <input class="botoes salvar" type="submit" value="Salvar">
+                <button class="botoes limpar" type="reset" value="Reset">Limpar</button>
+            </div>
+        </form>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <span style="color: white">Página desenvolvida para o programa +Devs2Blu</span>
+        <br>
+        <a href="https://github.com/DenegaSouza" target="_blank"><i class="fa fa-github"
+                style="font-size:48px;color:red"></i></a>
+
+    </footer>
+
+
+
+</html>

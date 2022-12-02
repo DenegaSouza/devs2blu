@@ -21,8 +21,16 @@ li {
     border-color: white;
 }
 
+ul {
+    text-align: left;
+    padding-inline-start: 0px;
+}
+
 tr:nth-child(even) {
     background-color: lightblue;
+}
+tr:hover {
+    background-color: gray
 }
 
 label {
@@ -33,14 +41,16 @@ label {
 textarea {
     vertical-align: middle;
 }
+
 a {
     color: white;
 }
-
-button:hover {
+a:hover {
     background-color: orange
 }
-a:hover {
+
+
+button:hover {
     background-color: orange
 }
 
@@ -56,3 +66,4 @@ button {
     width: 500px;
     border-radius: 5px;
 }
+
