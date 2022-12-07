@@ -29,21 +29,25 @@
         <h1 style="color: white; text-align: center;">Cadastro de Funcionários</h1>
         <form action="">
             <div>
-                <input type="text" class="campos" id="nome" placeholder="Nome:">
+                <input type="text" class="campos" name="nome" placeholder="Nome:">
             </div>
             <br>
             <div>
-                <input type="text" class="campos" id="cargo" placeholder="Cargo:">
+                <input type="text" class="campos" name="cpf" placeholder="CPF:">
             </div>
             <br>
             <div>
-                <input type="number" class="campos" id="salario" min="0" max="9999999" required data-type="number"
-                    placeholder="Salário:">
+                <input type="text" class="campos" name="cargo" placeholder="Cargo:">
             </div>
             <br>
             <div>
-                <input class="botoes salvar" type="submit" value="Salvar">
-                <button class="botoes limpar" type="reset" value="Reset">Limpar</button>
+                <input type="number" class="campos" name="salario" min="0" max="9999999" required data-type="number"
+                    placeholder="Salário Mensal:">
+            </div>
+            <br>
+            <div>
+                <input class="botoes salvar" id="salvar" type="submit" value="Salvar">
+                <button class="botoes limpar" type="reset" value="Reset" onclick="limpar(event)">Limpar</button>
             </div>
         </form>
     </main>
@@ -52,11 +56,12 @@
     <footer>
         <span style="color: white">Página desenvolvida para o programa +Devs2Blu</span>
         <br>
-        <a href="https://github.com/DenegaSouza" target="_blank"><i class="fa fa-github"
+        <a href="https://github.com/DenegaSouza" target="_blank" class="gh-icon"><i class="fa fa-github"
                 style="font-size:48px;color:red"></i></a>
 
     </footer>
+    <script src="js/script.js"></script>
 
-
+    <body>
 
 </html>

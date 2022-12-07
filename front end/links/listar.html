@@ -2,6 +2,7 @@
 <html lang="pt-BR">
 
 <head>
+    <link rel="stylesheet" href="css/table.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8" />
@@ -19,61 +20,39 @@
         <hr>
         <ul>
             <span style="color: white;">Menu de Opções -> </span>
-            <li><a href="cadastrar.html">Cadastrar</a></li>
+            <li><a href="cadastrar-func.html">Cadastrar</a></li>
             <li><a href="listar.html">Listar</a></li>
             <li><a href="editar.html">Editar</a></li>
         </ul>
     </header>
-<main>
-    <table class="tabelaCadastro" style="width: 90%;">
-        <tr>
-            <th>ID</th>
-            <th>Código</th>
-            <th>Nome Completo</th>
-            <th>Cargo</th>
-            <th>Salário</th>
-            <th>Ação</th>
-        </tr>
+    <main>
+        <h1 style="color: white;">Lista de Funcionários</h1>
+        <table id="funcionarios" class="tabelaCadastro" style="width: 90%;">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome Completo</th>
+                    <th>CPF</th>
+                    <th>Cargo</th>
+                    <th>Salário Mensal</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
 
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>7996</td>
-                <td>Everton Denega</td>
-                <td>Estagiário</td>
-                <td>R$ 3.000,00</td>
-                <td><button><a href="editar.html">Editar</a> </button> <br> <button><a href="#">Deletar</a></button></td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>2</td>
-                <td>1578</td>
-                <td>Haiko Ruediger</td>
-                <td>CEO</td>
-                <td>R$ 17.000,00</td>
-                <td><button><a href="editar.html">Editar</a> </button> <br> <button><a href="#">Deletar</a></button></td>
-            </tr>
-        </tbody>
-        <tbody>
-            <tr>
-                <td>3</td>
-                <td>8745</td>
-                <td>Melissa</td>
-                <td>CTO</td>
-                <td>R$ 12.000,00</td>
-                <td><button><a href="editar.html">Editar</a> </button> <br> <button><a href="">Deletar</a></button></td>
-            </tr>
-        </tbody>
-    </table>
-</main>
-</body>
+            </tbody>
+        </table>
+    </main>
+
 <br>
 <hr>
 <br>
 <footer>
     <span style="color: white">Página desenvolvida para o programa +Devs2Blu</span>
-    <br><a href="https://github.com/DenegaSouza" target="_blank"><i class="fa fa-github" style="font-size:48px;color:red"></i></a>
+    <br><a href="https://github.com/DenegaSouza" target="_blank"><i class="fa fa-github"
+            style="font-size:48px;color:red"></i></a>
 
 </footer>
+<script src="js/listar.js"></script>
+</body>
 </html>

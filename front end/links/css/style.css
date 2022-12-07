@@ -26,9 +26,6 @@ ul {
     padding-inline-start: 0px;
 }
 
-tr:nth-child(even) {
-    background-color: lightblue;
-}
 tr:hover {
     background-color: gray
 }
@@ -54,12 +51,23 @@ button:hover {
     background-color: orange
 }
 
+.bt-deletar:hover {
+    background-color: red
+}
+
 button {
     margin-bottom: 5px;
     background-color: black;
     border-radius: 10px;
     border-color: white;
+    color: white;
  }
+.bt-editar {
+background-color: orange;
+}
+.bt-deletar {
+    background-color: red;
+    }
 
 #logo img {
     background-color: black;
