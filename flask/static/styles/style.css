@@ -1,0 +1,19 @@
+.titulo1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.base {
+    background-color: white;
+}
+
+footer {
+    padding-left: 50px;
+}
+
+button:focus {
+    outline: 0;
+}
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}

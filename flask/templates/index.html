@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+        <table class="table table-light table-sm table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Altura</th>
+                    <th scope="col">Ação</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                {% for pessoa in pessoas %}
+                <tr>
+                    <td>{{pessoa.nome}}</td>
+                    <td>{{pessoa.idade}}</td>
+                    <td>{{pessoa.altura}}</td>
+                    <td><button onclick="">Deletar</button></td>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+{% endblock %}
