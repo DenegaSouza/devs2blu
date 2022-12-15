@@ -7,13 +7,24 @@
     background-color: white;
 }
 
-footer {
-    padding-left: 50px;
-}
-
 button:focus {
     outline: 0;
 }
 .navbar .dropdown-menu .form-control {
     width: 200px;
+}
+
+.botoes{
+    text-transform: capitalize;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    vertical-align:middle;
+    text-align: center;
+}
+
+.botoes:hover{
+    cursor: pointer;
+    color: black;
+    background-color: orange;
 }

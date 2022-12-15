@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1 style="width: 100%">
+    {% block title %} Editar cadastro de {{ pessoa.nome }}
+    {% endblock %}
+</h1>
+<hr>
+<br>
+<form method="post">
+    <p>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" value={{ pessoa.nome }} placeholder="Nome">
+        </input>
+    </p>
+
+    <p>
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" value={{ pessoa.idade }} placeholder="Idade">
+        </input>
+    </p>
+
+    <p>
+        <label for="altura">Altura</label>
+        <input type="text" name="altura" value={{ pessoa.altura }} placeholder="Altura">
+        </input>
+    </p>
+
+    <p>
+        <button type="submit">Alterar</button>
+    <form method="POST" action="{{ url_for('deletar', id=pessoa.id) }}">
+        <input type="submit" value="Deletar cadastro" onclick="return confirm('Têm certeza?')">
+    </form>
+    </p>
+</form>
+{% endblock %}

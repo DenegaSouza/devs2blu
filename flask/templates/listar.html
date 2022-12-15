@@ -16,8 +16,7 @@
                     <td>{{pessoa.nome}}</td>
                     <td>{{pessoa.idade}}</td>
                     <td>{{pessoa.altura}}</td>
-                    <td><button onclick="">Deletar</button></td>
-
+                    <td><a href="{{ url_for('editar', id=pessoa.id) }}">Editar</a></td>
                 </tr>
                 {% endfor %}
 
